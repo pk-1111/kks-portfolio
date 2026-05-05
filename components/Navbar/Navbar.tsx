@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link href="/">Project</Link>
             </div> */}
 
-            <Link href="/Kyaw_Kaung_San(Final).pdf" download="Kyaw_Kaung_San_CV.pdf" className={"bg-blue-400 px-2 py-2 rounded-xl"}><i className="fa-solid fa-file-arrow-down"></i>Get My Cv</Link>
+            <Link href="/KyawKaungSan-CV.pdf" download="Kyaw_Kaung_San_CV.pdf" className={"bg-blue-400 px-2 py-2 rounded-xl"}><i className="fa-solid fa-file-arrow-down"></i>Get My Cv</Link>
         </nav>
     )
 }
