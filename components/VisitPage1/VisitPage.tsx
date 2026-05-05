@@ -5,7 +5,7 @@ export default function VisitPage1() {
     const projects = [
         {
             title: "Pizza Hunter",
-            image: "/bg_video/pizza-thumbnail.png",
+            image: "/public/bg_video/photo_2026-05-05_03-43-48.jpg",
             video: "/bg_video/Recordingofpizza-Project.mp4",
             link: "/visit1",
             // မင်းဆီမှာရှိတဲ့ ပုံလမ်းကြောင်းတွေနဲ့ ဒီမှာပြန်လဲလိုက်ပါ
@@ -40,14 +40,16 @@ export default function VisitPage1() {
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {projects.map((project, index) => (
                     <div key={index} className="lg:col-span-3 rounded-[1.5rem] overflow-hidden border border-white/10 bg-black/40 backdrop-blur-sm shadow-2xl relative group">
+                        {/* Video */}
                         <video
-                            src={project.video}
                             loop
                             muted
                             playsInline
                             autoPlay
                             className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
-                        />
+                        >
+                            <source src={project.video} type="video/mp4" />
+                        </video>
                     </div>
                 ))}
 
