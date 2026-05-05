@@ -1,0 +1,15 @@
+.nav {
+    @apply flex justify-between items-center py-5 px-5 sticky top-0 border-2;
+}
+
+.nav_links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cvButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem 1rem;
+}

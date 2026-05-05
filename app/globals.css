@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* --- Animation Keyframes များ --- */
+
+/* Marquee (စာတန်းလှုပ်ရှားမှု) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Gradient Background (နောက်ခံအရောင်ပြောင်းလဲမှု) */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* --- Custom Classes --- */
+
+.animate-infinite {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.animate-infinite-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite reverse;
+}
+
+.hover-pause:hover {
+  animation-play-state: paused;
+}
+
+/* --- Body Style (တစ်ခုတည်းပေါင်းထားသည်) --- */
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+
+  /* Gradient Settings */
+  background: linear-gradient(-45deg, #534b4b, #e0f2fe, #3b82f6, #d13c3c);
+  background-size: 400% 400%;
+  /* 800% ထက် 400% က ပိုအဆင်ပြေပါတယ် */
+  background-attachment: fixed;
+  animation: gradientAnimation 10s ease infinite;
+}

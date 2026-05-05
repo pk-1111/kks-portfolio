@@ -1,0 +1,34 @@
+/* ညာမှဘယ်သွားမည့် animation (လက်ရှိရှိပြီးသား) */
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ဘယ်မှညာသွားမည့် animation (အသစ်ထည့်ရန်) */
+@keyframes marquee-infinite-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-infinite {
+    display: flex;
+    width: max-content;
+    animation: marquee-infinite 20s linear infinite;
+}
+
+/* ဒုတိယစာကြောင်းအတွက် အသုံးပြုရန် class */
+.animate-infinite-reverse {
+    display: flex;
+    width: max-content;
+    animation: marquee-infinite-reverse 20s linear infinite;
+}
