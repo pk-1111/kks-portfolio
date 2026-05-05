@@ -6,7 +6,7 @@ export default function VisitPage1() {
         {
             title: "Pizza Hunter",
             image: "/bg_video/pizza-thumbnail.png",
-            video: "/bg_video/Recordingofpizza-project.mp4",
+            video: "/bg_video/Recordingofpizza-Project.mp4",
             link: "/visit1",
             // မင်းဆီမှာရှိတဲ့ ပုံလမ်းကြောင်းတွေနဲ့ ဒီမှာပြန်လဲလိုက်ပါ
             screenshots: ["/pizza-src/pizza-src1.png", "/pizza-src/pizza-src2.png", "/pizza-src/pizza-src3.png", "/pizza-src/pizza-src4.png", "/pizza-src/pizza-src5.png", "/pizza-src/pizza-src6.png", "/pizza-src/pizza-src7.png"]
