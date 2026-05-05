@@ -1,5 +1,14 @@
-export default function MarqueeItem({ text, icon, reverse, color = "text-white" }) {
-    // animation နာမည်ကို css ထဲကအတိုင်း ပေးမယ်
+export default function MarqueeItem({
+    text,
+    icon,
+    reverse,
+    color = "text-white"
+}: {
+    text: string;
+    icon: any;
+    reverse?: boolean;
+    color?: string;
+}) {
     const animationClass = reverse ? "animate-infinite-reverse" : "animate-infinite";
 
     return (
