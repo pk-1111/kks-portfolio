@@ -45,7 +45,7 @@ export default function StatsSection() {
                         <p className="text-2xl font-semibold pt-4">
                             {stat.label}
                         </p>
-                        <p className="text-gray-400 text-lg">
+                        <p className="text-slate-200 text-lg">
                             {stat.subLabel}
                         </p>
                     </div>
@@ -57,7 +57,7 @@ export default function StatsSection() {
                 <h2 className="text-4xl md:text-5xl font-bold">
                     Want To Work Together?
                 </h2>
-                <p className="text-gray-400 text-xl max-w-2xl mx-auto">
+                <p className="text-slate-200 text-xl max-w-2xl mx-auto">
                     Drop me a message and let's see how we can build something great
                 </p>
             </div>
@@ -72,7 +72,7 @@ export default function StatsSection() {
                         <a
                             key={index}
                             href={social.link}
-                            className="w-14 h-14 flex items-center justify-center rounded-full border border-emerald-500/40 text-emerald-400 text-2xl hover:bg-emerald-500/10 hover:shadow-[0_0_15px_rgba(52,211,153,0.3)] transition-all duration-300"
+                            className="w-14 h-14 flex items-center justify-center rounded-full border border-emerald-500/40 text-white text-2xl hover:bg-emerald-500/10 hover:shadow-[0_0_15px_rgba(52,211,153,0.3)] transition-all duration-300"
                         >
                             <i className={`fa - brands ${social.icon}`}></i>
                         </a>
@@ -86,7 +86,7 @@ export default function StatsSection() {
                         <div className="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                         <i className="fa-solid fa-briefcase text-emerald-400 text-xl group-hover:rotate-12 transition-transform"></i>
-                        <span className="text-emerald-400 text-2xl font-semibold tracking-wide">
+                        <span className="text-white text-2xl font-semibold tracking-wide">
                             Let's Talk Success
                         </span>
                     </button>

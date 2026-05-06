@@ -82,7 +82,7 @@ const Profile = () => {
                                 Actively engineering production-ready web applications with a focus on POS (Point of Sale) systems.
                                 Specializing in creating clean architectures and optimizing database structures.
                             </p>
-                            <ul className="grid md:grid-cols-2 gap-4 text-sm text-gray-500">
+                            <ul className="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
                                 <li className="flex items-center gap-2">▹ Scalable Database Design (MySQL)</li>
                                 <li className="flex items-center gap-2">▹ API Integration & Development</li>
                                 <li className="flex items-center gap-2">▹ Modern UI/UX Implementation</li>
@@ -114,7 +114,7 @@ const Profile = () => {
 
                                 <div className="p-8">
                                     <h4 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">{p.title}</h4>
-                                    <p className="text-sm text-gray-500 leading-relaxed mb-6 h-16 line-clamp-3">{p.desc}</p>
+                                    <p className="text-sm text-slate-200 leading-relaxed mb-6 h-16 line-clamp-3">{p.desc}</p>
                                     <div className="text-[10px] font-bold font-mono tracking-widest text-emerald-500 uppercase px-2 py-1 border border-emerald-500/20 rounded inline-block">
                                         {p.tech}
                                     </div>
@@ -138,7 +138,7 @@ const Profile = () => {
             </main>
 
             <footer className="py-12 text-center border-t border-white/5">
-                <p className="text-xs font-mono tracking-[0.2em] text-gray-600">
+                <p className="text-xs font-mono tracking-[0.2em] text-white">
                     KYAW KAUNG SAN • DEVELOPER PORTFOLIO • 2026
                 </p>
             </footer>

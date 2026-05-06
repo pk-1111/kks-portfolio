@@ -16,7 +16,7 @@ export default function VisitPage1() {
     return (
         <div className="max-w-6xl mx-auto pt-16 px-6">
             {/* Back button */}
-            <button className="text-gray-400 hover:text-white flex items-center gap-2 mb-6 transition">
+            <button className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
                 <span className="text-lg">‹</span> Projects
             </button>
 
@@ -46,6 +46,7 @@ export default function VisitPage1() {
                             muted
                             playsInline
                             autoPlay
+                            preload="metadata"
                             className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
                         >
                             <source src={project.video} type="video/mp4" />
@@ -96,7 +97,7 @@ export default function VisitPage1() {
             {projects.map((project, index) => (
                 <div key={index} className="mt-8">
                     <div className="flex items-center gap-4 mb-4">
-                        <span className="text-gray-500 uppercase tracking-widest text-xs font-bold">System Preview</span>
+                        <span className="text-white uppercase tracking-widest text-xs font-bold">System Preview</span>
                         <div className="flex-1 h-[1px] bg-white/5"></div>
                     </div>
                     <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
@@ -116,7 +117,7 @@ export default function VisitPage1() {
                         <div className="w-1 h-8 bg-emerald-500 rounded-full"></div>
                         <h2 className="text-white text-xl font-bold">Project Description</h2>
                     </div>
-                    <p className="text-gray-400 leading-relaxed text-lg font-light">
+                    <p className="text-slate-200 leading-relaxed text-lg font-light">
                         "I developed Pizza Hunter, a comprehensive web-based food ordering platform. Built with a robust Laravel backend and a clean Bootstrap UI, the system facilitates seamless transactions between customers and staff. It features a sophisticated administrative dashboard designed for real-time order tracking and menu management."
                     </p>
                 </section>
@@ -127,7 +128,7 @@ export default function VisitPage1() {
                         <div className="w-1 h-8 bg-emerald-500 rounded-full"></div>
                         <h2 className="text-white text-xl font-bold">Key Features</h2>
                     </div>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-400">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-200">
                         <li className="flex items-center gap-3">🍕 Dynamic Product Menu with Categories</li>
                         <li className="flex items-center gap-3">🛒 Full Shopping Cart & Checkout System</li>
                         <li className="flex items-center gap-3">💳 Payment Verification (Screenshot Upload)</li>
@@ -146,7 +147,7 @@ export default function VisitPage1() {
                     <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-[100%] rounded-full shadow-[0_0_15px_rgba(16,185,129,0.5)]"></div>
                     </div>
-                    <div className="flex justify-between text-[10px] uppercase tracking-tighter text-gray-500 font-bold">
+                    <div className="flex justify-between text-[10px] uppercase tracking-tighter text-white font-bold">
                         <span>PHP / Laravel Backend / Bootstrap UI</span>
                         <span>Completed</span>
                     </div>

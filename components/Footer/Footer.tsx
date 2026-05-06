@@ -32,8 +32,8 @@ export default function Footer() {
                         <a href="mailto:your@email.com" className="hover:text-green-400"><i className="fa-solid fa-envelope"></i></a>
                     </div>
 
-                    <p className="text-gray-500 text-sm mt-4">
-                        <i className="fa-solid fa-location-dot"></i> Myanmar
+                    <p className="text-white text-sm mt-4">
+                        <i className="fa-solid fa-location-dot"></i> Yangon, Myanmar
                     </p>
                 </div>
 

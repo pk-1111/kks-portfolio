@@ -74,7 +74,7 @@ body {
   min-height: 100vh;
 
   /* Gradient Settings */
-  background: linear-gradient(-45deg, #534b4b, #e0f2fe, #3b82f6, #d13c3c);
+  background: linear-gradient(-45deg, #ff58a0, #0a7575, #8488ce, #d13c3c);
   background-size: 400% 400%;
   /* 800% ထက် 400% က ပိုအဆင်ပြေပါတယ် */
   background-attachment: fixed;

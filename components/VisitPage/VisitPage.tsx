@@ -10,7 +10,7 @@ export default function VisitPage() {
     return (
         <div className="max-w-6xl mx-auto pt-16 px-6">
             {/* Back button */}
-            <button className="text-gray-400 hover:text-white flex items-center gap-2 mb-6 transition">
+            <button className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
                 <span className="text-lg">‹</span> Projects
             </button>
 
@@ -22,7 +22,7 @@ export default function VisitPage() {
                             <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div> Live
                         </span>
                     </div>
-                    <p className="text-gray-400 text-lg">Premium Apple Authorized Reseller Concept</p>
+                    <p className="text-slate-200 text-lg">Premium Apple Authorized Reseller Concept</p>
                 </div>
 
                 <div className="flex items-center gap-6 text-sm">
@@ -41,6 +41,7 @@ export default function VisitPage() {
                         muted
                         playsInline
                         autoPlay
+                        preload="metadata"
                         className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
                     />
 
@@ -80,7 +81,7 @@ export default function VisitPage() {
 
             <div className="mt-8">
                 <div className="flex items-center gap-4 mb-4">
-                    <span className="text-gray-500 uppercase tracking-widest text-xs font-bold">In-depth views</span>
+                    <span className="text-white uppercase tracking-widest text-xs font-bold">In-depth views</span>
                     <div className="flex-1 h-[1px] bg-white/5"></div>
                 </div>
                 <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
@@ -138,7 +139,7 @@ export default function VisitPage() {
                         <div className="w-1 h-8 bg-emerald-500 rounded-full"></div>
                         <h2 className="text-white text-xl font-bold">Project Description</h2>
                     </div>
-                    <p className="text-gray-400 leading-relaxed text-lg font-light">
+                    <p className="text-slate-200 leading-relaxed text-lg font-light">
                         "I developed I-Max, a premium e-commerce platform specializing in Apple products. The project focuses on a high-end user interface and high-performance functionality, bridging a robust Laravel backend with a reactive React frontend using Inertia.js."
                     </p>
                 </section>
@@ -149,7 +150,7 @@ export default function VisitPage() {
                         <div className="w-1 h-8 bg-emerald-500 rounded-full"></div>
                         <h2 className="text-white text-xl font-bold">Features</h2>
                     </div>
-                    <ul className="space-y-4 text-gray-400">
+                    <ul className="space-y-4 text-slate-200">
                         <li className="flex items-center gap-3">⚡️ High-performance SPA experience via Inertia.js</li>
                         <li className="flex items-center gap-3">📱 Responsive, mobile-first design using Tailwind CSS</li>
                         <li className="flex items-center gap-3">⚙️ Dynamic product variant and specification selection</li>
@@ -167,7 +168,7 @@ export default function VisitPage() {
                     <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-[85%] rounded-full shadow-[0_0_15px_rgba(16,185,129,0.5)]"></div>
                     </div>
-                    <div className="flex justify-between text-[10px] uppercase tracking-tighter text-gray-500 font-bold">
+                    <div className="flex justify-between text-[10px] uppercase tracking-tighter text-white font-bold">
                         <span>React / Laravel / Tailwind CSS</span>
                         <span>85%</span>
                     </div>

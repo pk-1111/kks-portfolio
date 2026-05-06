@@ -25,14 +25,14 @@ export default function ProjectSection() {
         <div className="relative z-30 w-full flex flex-col items-center px-6 py-16 text-white mt-10">
             {/* Header Section */}
             <div className="flex flex-col p-3 space-y-6 text-center items-center mb-12">
-                <div className="flex items-center justify-center px-6 py-3 rounded-full bg-blue-600/20 border border-blue-500/50">
+                <div className="flex items-center justify-center px-6 py-3 font-mono rounded-full bg-blue-600/20 border border-blue-500/50">
                     <span className="text-xl">
                         <i className="fa-solid fa-briefcase mr-2"></i> Projects
                     </span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold leading-relaxed">
-                    I build digital products <br />
-                    tailored to your needs
+                <h1 className="text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-300 font-bold leading-relaxed">
+                    3+ Projects Done <br />
+                    Here're Some Of Them
                 </h1>
             </div>
 
@@ -73,6 +73,7 @@ export default function ProjectSection() {
                                 muted
                                 playsInline
                                 autoPlay
+                                preload="metadata"
                                 className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
                             >
                                 <source src={project.video} type="video/mp4" />
@@ -80,16 +81,13 @@ export default function ProjectSection() {
 
 
 
-                            {/* Overlay Info (Optional) */}
-                            <div className="absolute bottom-8 left-8 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/50 backdrop-blur-md p-4 rounded-2xl border border-white/10">
-                                <p className="text-sm font-medium">Hover to play demo video</p>
-                            </div>
+
                         </div>
 
                         {/* Screenshot Gallery - အောက်က ပုံ ၅ ပုံ အပိုင်း */}
                         <div className="mt-8">
                             <div className="flex items-center gap-4 mb-4">
-                                <span className="text-gray-500 uppercase tracking-widest text-xs font-bold">In-depth views</span>
+                                <span className="text-slate-200 uppercase tracking-widest text-xs font-bold">In-depth views</span>
                                 <div className="flex-1 h-[1px] bg-white/5"></div>
                             </div>
                             <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
