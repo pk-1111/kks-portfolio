@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Kyaw Kaung San Portfolio",
     images: [
       {
-        url: "https://kks-portfolio.vercel.app/og-image.png", // public folder ထဲက ပုံ link
+        url: "https://kks-portfolio.vercel.app/gg-image.png", // public folder ထဲက ပုံ link
         width: 1200,
         height: 630,
       },
