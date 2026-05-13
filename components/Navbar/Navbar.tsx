@@ -15,8 +15,8 @@ const Navbar = () => {
 
             {/* Get My CV Button with Animated Border */}
             <Link
-                href="/Kyaw_Kaung_San_CV .pdf"
-                download="Kyaw_Kaung_San_CV .pdf"
+                href="/Kyaw_Kaung_San_CV.pdf"
+                download="Kyaw_Kaung_San_CV.pdf"
                 className="relative inline-flex items-center justify-center p-[1.5px] overflow-hidden rounded-xl group transition-all duration-300 active:scale-95"
             >
                 {/* သင်ပြထားတဲ့ Conic Gradient Border Animation */}
