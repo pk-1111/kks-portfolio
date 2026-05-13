@@ -27,7 +27,7 @@ export default function VisitPage() {
 
                 <div className="flex items-center gap-6 text-sm">
                     <a href="#" className="text-gray-400 hover:text-white flex items-center gap-2">GitHub ↗</a>
-                    <a href="#" className="text-gray-400 hover:text-white flex items-center gap-2">Visit Live ↗</a>
+                    <a href="/Admin" className="text-gray-400 hover:text-white flex items-center gap-2">Admin Dashboard↗</a>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ export default function VisitPage() {
                 <div className="lg:col-span-3 rounded-[1.5rem] overflow-hidden border border-white/10 bg-black/40 backdrop-blur-sm shadow-2xl relative group">
                     {/* Video */}
                     <video
-                        src="/bg_video/Video Project(1).mp4"
+                        src="/bg_video/I-Max-User.mp4"
                         loop
                         muted
                         playsInline
@@ -57,7 +57,7 @@ export default function VisitPage() {
                             🔗 Tech Stack
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                            {['React', 'Laravel', 'Inertia.js & Tailwind CSS', 'mobile-first'].map(tag => (
+                            {['Laravel', 'PHP', 'Tailwind CSS', 'MySQL'].map(tag => (
                                 <span key={tag} className="px-3 py-1 bg-white/10 rounded-lg text-[11px] text-white border border-white/5">
                                     {tag}
                                 </span>
@@ -68,11 +68,15 @@ export default function VisitPage() {
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md">
                         <h3 className="text-white text-xs font-bold uppercase tracking-widest mb-4">🔗 Other Projects</h3>
                         <ul className="space-y-3 text-sm text-white">
+
+                            <Link href="/visit2">
+                                <li className="hover:text-emerald-400 cursor-pointer transition">Ev-POS Project</li>
+                            </Link>
                             <Link href="/visit1">
                                 <li className="hover:text-emerald-400 cursor-pointer transition">Hunter-Pizza Project</li>
                             </Link>
                             <Link href="/visit">
-                                <li className="hover:text-emerald-400 cursor-pointer transition">I-Max Project</li>
+                                <li className="hover:text-emerald-400 cursor-pointer transition">Admin Dashborad</li>
                             </Link>
                         </ul>
                     </div>
@@ -140,7 +144,7 @@ export default function VisitPage() {
                         <h2 className="text-white text-xl font-bold">Project Description</h2>
                     </div>
                     <p className="text-slate-200 leading-relaxed text-lg font-light">
-                        "I developed I-Max, a premium e-commerce platform specializing in Apple products. The project focuses on a high-end user interface and high-performance functionality, bridging a robust Laravel backend with a reactive React frontend using Inertia.js."
+                        "I developed i-Device Shop, a specialized e-commerce and POS platform dedicated to premium Apple products. The system is engineered using Laravel (PHP) and Tailwind CSS, focusing on a clean, high-end user interface and an efficient order management workflow. It bridges the gap between a consumer storefront and a functional retail management tool."
                     </p>
                 </section>
 
@@ -151,11 +155,15 @@ export default function VisitPage() {
                         <h2 className="text-white text-xl font-bold">Features</h2>
                     </div>
                     <ul className="space-y-4 text-slate-200">
-                        <li className="flex items-center gap-3">⚡️ High-performance SPA experience via Inertia.js</li>
-                        <li className="flex items-center gap-3">📱 Responsive, mobile-first design using Tailwind CSS</li>
-                        <li className="flex items-center gap-3">⚙️ Dynamic product variant and specification selection</li>
-                        <li className="flex items-center gap-3">🛒 Integrated shopping cart and inventory management</li>
-                        <li className="flex items-center gap-3">🎨 Fully Functional Cart & Checkout Flow</li>
+                        <li className="flex items-center gap-3">User Authentication & Security: Secure login and registration system for personalized customer profiles and order tracking.</li>
+                        <li className="flex items-center gap-3">Categorized Product Discovery: Advanced filtering allows users to browse products by specific categories (e.g., iPhone, iPad, Mac) for a streamlined shopping experience.</li>
+                        <li className="flex items-center gap-3">Dynamic Product Customization: Enables users to select specific variants, including Storage Capacity and Color options, with real-time detail updates.</li>
+                        <li className="flex items-center gap-3">Flexible Cart Management: A robust shopping cart that supports multi-item selection and real-time removal before checkout.</li>
+                        <li className="flex items-center gap-3">Order Lifecycle Tracking: Post-purchase, users can track their orders in real-time. Orders transition from 'Pending' to 'Accepted' or 'Rejected' based on admin actions.</li>
+                        <li className="flex items-center gap-3">Admin Fulfillment Dashboard: Features a comprehensive admin interface to manage incoming orders, verify payments, and handle inventory status.</li>
+                        <li className="flex items-center gap-3">Transaction History: A detailed log for users to access and review their complete purchase and payment history.</li>
+                        <li className="flex items-center gap-3">Integrated Customer Contact: Built-in contact functionality to facilitate direct communication between the customer and the shop.</li>
+
                     </ul>
                 </section>
 
@@ -169,7 +177,7 @@ export default function VisitPage() {
                         <div className="bg-emerald-500 h-full w-[85%] rounded-full shadow-[0_0_15px_rgba(16,185,129,0.5)]"></div>
                     </div>
                     <div className="flex justify-between text-[10px] uppercase tracking-tighter text-white font-bold">
-                        <span>React / Laravel / Tailwind CSS</span>
+                        <span> Laravel / PHP / Tailwind CSS</span>
                         <span>85%</span>
                     </div>
                 </section>

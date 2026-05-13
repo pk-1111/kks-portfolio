@@ -5,18 +5,30 @@ export default function ProjectSection() {
     const projects = [
         {
             title: "I-Max Project",
-            image: "/idevice-shop/idvice-shop-page.png",
-            video: "/bg_video/Video Project(1).mp4",
+            image: "/idevice-shop/idevice-cover.png",
+            video: "/bg_video/I-Max-User.mp4",
             link: "/visit",
-            screenshots: ["/idevice-shop/idevice-shop.png", "/idevice-shop/idevice-1.png", "/idevice-shop/idevice-2.png", "/idevice-shop/idevice-3.png", "/idevice-shop/idevice-4.png", "/idevice-shop/idevice-5.png", "/idevice-shop/idevice-6.png", "/idevice-shop/idevice-7.png", "/idevice-shop/idevice-8.png", "/idevice-shop/idevice-9.png"]
+            details: "A premium Apple-inspired e-commerce storefront featuring glassmorphism UI, fluid animations, and real-time inventory management."
+
+            // screenshots: ["/idevice-shop/idevice-shop.png", "/idevice-shop/idevice-1.png", "/idevice-shop/idevice-2.png", "/idevice-shop/idevice-3.png", "/idevice-shop/idevice-4.png", "/idevice-shop/idevice-5.png", "/idevice-shop/idevice-6.png", "/idevice-shop/idevice-7.png", "/idevice-shop/idevice-8.png", "/idevice-shop/idevice-9.png"]
         },
         {
             title: "Pizza Project",
-            image: "/bg_video/Screenshot 2026-05-05 034618.png",
-            video: "/bg_video/Recordingofpizza-Project.mp4",
+            image: "/bg_video/pizza-src-cover.png",
+            video: "/bg_video/Pizza-User.mp4",
             link: "/visit1",
-            screenshots: ["/pizza-src/pizza-src1.png", "/pizza-src/pizza-src2.png", "/pizza-src/pizza-src3.png", "/pizza-src/pizza-src4.png", "/pizza-src/pizza-src5.png", "/pizza-src/pizza-src6.png", "/pizza-src/pizza-src7.png"]
+            details: "A full- stack pizza ordering platform featuring real - time order tracking, interactive customer reviews, and dynamic price filtering."
+            // screenshots: ["/pizza-src/pizza-src-1.png", "/pizza-src/pizza-src-2.png", "/pizza-src/pizza-src-3.png", "/pizza-src/pizza-src-4.png", "/pizza-src/pizza-src-5.png", "/pizza-src/pizza-src-6.png", "/pizza-src/pizza-src-7.png", , "/pizza-src/pizza-src-8.png", , "/pizza-src/pizza-src-9.png", , "/pizza-src/pizza-src-10.png"]
         },
+        {
+            title: "Ev-POS Project",
+            image: "/ev-pos/ev-1-cover.png",
+            video: "/bg_video/Ev-User.mp4",
+            link: "/visit2",
+            details: "A modern EV retail POS system with dynamic product variants, integrated cart logic, and a streamlined checkout experience."
+            //     screenshots: ["/pizza-src/pizza-src1.png", "/pizza-src/pizza-src2.png", "/pizza-src/pizza-src3.png", "/pizza-src/pizza-src4.png", "/pizza-src/pizza-src5.png", "/pizza-src/pizza-src6.png", "/pizza-src/pizza-src7.png"]
+        },
+
     ];
 
 
@@ -86,11 +98,11 @@ export default function ProjectSection() {
 
                         {/* Screenshot Gallery - အောက်က ပုံ ၅ ပုံ အပိုင်း */}
                         <div className="mt-8">
-                            <div className="flex items-center gap-4 mb-4">
-                                <span className="text-slate-200 uppercase tracking-widest text-xs font-bold">In-depth views</span>
-                                <div className="flex-1 h-[1px] bg-white/5"></div>
+                            <div className="flex items-center justify-center gap-4 mb-4">
+                                <span className="text-slate-200  tracking-widest  text-xs font-bold">{project.details}</span>
+
                             </div>
-                            <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
+                            {/* <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
 
                                 <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
                                     <img src={project.screenshots[0]} alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
@@ -136,7 +148,7 @@ export default function ProjectSection() {
 
 
 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 ))}

@@ -9,18 +9,21 @@ const Profile = () => {
             tech: "Laravel + React + Inertia.js",
             desc: "A modern Single Page Application (SPA) focusing on high-performance data handling and seamless UI transitions using Inertia.js.",
             image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=500", // Project ပုံထည့်ရန်
+            link: "/visit"
         },
         {
             title: "EV POS Project",
             tech: "React.js",
             desc: "Developed a lightweight, fast-loading frontend POS interface with React, emphasizing component reusability and efficient state management.",
             image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=500", // Project ပုံထည့်ရန်
+            link: "/visit2"
         },
         {
             title: "Pizza Ordering Project",
             tech: "Laravel + PHP + Bootstrap",
             desc: "A full-stack web application featuring order management, secure authentication, and a responsive design for food services.",
             image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=500", // Project ပုံထည့်ရန်
+            link: "/visit1"
         }
     ];
 
@@ -105,7 +108,7 @@ const Profile = () => {
                                         alt={p.title}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100"
                                     />
-                                    <Link href="/visit">
+                                    <Link href={p.link}>
                                         <div className="absolute top-4 right-4 p-2 bg-[#0d1117]/80 rounded-full text-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity">
                                             <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17" /></svg>
                                         </div>
