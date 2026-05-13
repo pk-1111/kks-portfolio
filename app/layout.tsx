@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       {
         url: "https://kks-portfolio.vercel.app/gg-image.png", // public folder ထဲက ပုံ link
         width: 1200,
-        height: 630,
+        height: 650,
       },
     ],
     locale: "en_US",
