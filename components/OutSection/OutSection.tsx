@@ -7,7 +7,7 @@ export default function ProjectSection() {
             title: "I-Max Project",
             image: "/idevice-shop/idevice-cover.png",
             video: "/bg_video/I-Max-User.mp4",
-            link: "/visit",
+            link: "/i_max_pos",
             details: "A premium Apple-inspired e-commerce storefront featuring glassmorphism UI, fluid animations, and real-time inventory management."
 
             // screenshots: ["/idevice-shop/idevice-shop.png", "/idevice-shop/idevice-1.png", "/idevice-shop/idevice-2.png", "/idevice-shop/idevice-3.png", "/idevice-shop/idevice-4.png", "/idevice-shop/idevice-5.png", "/idevice-shop/idevice-6.png", "/idevice-shop/idevice-7.png", "/idevice-shop/idevice-8.png", "/idevice-shop/idevice-9.png"]
@@ -16,7 +16,7 @@ export default function ProjectSection() {
             title: "Pizza Project",
             image: "/bg_video/pizza-src-cover.png",
             video: "/bg_video/Pizza-User.mp4",
-            link: "/visit1",
+            link: "/pizza_pos",
             details: "A full- stack pizza ordering platform featuring real - time order tracking, interactive customer reviews, and dynamic price filtering."
             // screenshots: ["/pizza-src/pizza-src-1.png", "/pizza-src/pizza-src-2.png", "/pizza-src/pizza-src-3.png", "/pizza-src/pizza-src-4.png", "/pizza-src/pizza-src-5.png", "/pizza-src/pizza-src-6.png", "/pizza-src/pizza-src-7.png", , "/pizza-src/pizza-src-8.png", , "/pizza-src/pizza-src-9.png", , "/pizza-src/pizza-src-10.png"]
         },
@@ -24,7 +24,7 @@ export default function ProjectSection() {
             title: "Ev-POS Project",
             image: "/ev-pos/ev-1-cover.png",
             video: "/bg_video/Ev-User.mp4",
-            link: "/visit2",
+            link: "/ev_pos",
             details: "A modern EV retail POS system with dynamic product variants, integrated cart logic, and a streamlined checkout experience."
             //     screenshots: ["/pizza-src/pizza-src1.png", "/pizza-src/pizza-src2.png", "/pizza-src/pizza-src3.png", "/pizza-src/pizza-src4.png", "/pizza-src/pizza-src5.png", "/pizza-src/pizza-src6.png", "/pizza-src/pizza-src7.png"]
         },

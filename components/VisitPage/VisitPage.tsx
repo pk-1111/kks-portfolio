@@ -26,8 +26,8 @@ export default function VisitPage() {
                 </div>
 
                 <div className="flex items-center gap-6 text-sm">
-                    <a href="#" className="text-gray-400 hover:text-white flex items-center gap-2">GitHub ↗</a>
-                    <a href="/Admin" className="text-gray-400 hover:text-white flex items-center gap-2">Admin Dashboard↗</a>
+                    <a href="https://github.com/pk-1111/I-Max-POS.git" className="text-gray-400 hover:text-white flex items-center gap-2">GitHub ↗</a>
+                    <a href="/admin_dashboard" className="text-gray-400 hover:text-white flex items-center gap-2">Admin Dashboard↗</a>
                 </div>
             </div>
 
@@ -69,13 +69,13 @@ export default function VisitPage() {
                         <h3 className="text-white text-xs font-bold uppercase tracking-widest mb-4">🔗 Other Projects</h3>
                         <ul className="space-y-3 text-sm text-white">
 
-                            <Link href="/visit2">
+                            <Link href="/ev_pos">
                                 <li className="hover:text-emerald-400 cursor-pointer transition">Ev-POS Project</li>
                             </Link>
-                            <Link href="/visit1">
+                            <Link href="/pizza_pos">
                                 <li className="hover:text-emerald-400 cursor-pointer transition">Hunter-Pizza Project</li>
                             </Link>
-                            <Link href="/visit">
+                            <Link href="/admin_dashboard">
                                 <li className="hover:text-emerald-400 cursor-pointer transition">Admin Dashborad</li>
                             </Link>
                         </ul>

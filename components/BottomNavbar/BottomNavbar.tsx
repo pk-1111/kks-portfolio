@@ -14,7 +14,7 @@ export default function FloatingNavbar() {
                 <button className="text-gray-400 hover:text-white  hover:scale-200 transition-transform duration-300 text-xl"><i className="fa-solid fa-user"></i></button>
             </Link>
 
-            <Link href="/visit">
+            <Link href="/i_max_pos">
                 <button className="text-gray-400 hover:text-white  hover:scale-200 transition-transform duration-300 text-xl"><i className="fa-regular fa-folder"></i></button>
             </Link>
             <button className="text-gray-400 hover:text-white  hover:scale-110 transition-transform duration-300 text-xl">|</button>
