@@ -1,5 +1,5 @@
 import AdminPage from "@/components/Admin/Admin";
-import BackgroundVideo from "@/components/Background/BackgroundVideo";
+
 import FloatingNavbar from "@/components/BottomNavbar/BottomNavbar";
 import ContactPage from "@/components/GetInTouch/GetInTouch";
 import VisitPage from "@/components/VisitPage/VisitPage";
