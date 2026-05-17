@@ -1,3 +1,5 @@
+import { IconCurrentLocation, IconLocation, IconLocationBolt, IconLocationCode, IconLocationCog, IconLocationPin, IconLocationUp, IconMapPin } from "@tabler/icons-react";
+
 export default function Footer() {
     return (
         <footer className="w-full mt-10 border-t border-white/10 py-10 px-6 z-20 text-white">
@@ -32,8 +34,8 @@ export default function Footer() {
                         <a href="mailto:your@email.com" className="hover:text-green-400"><i className="fa-solid fa-envelope"></i></a>
                     </div>
 
-                    <p className="text-white text-sm mt-4">
-                        <i className="fa-solid fa-location-dot"></i> Yangon, Myanmar
+                    <p className="text-white flex items-center text-sm mt-4">
+                        <IconMapPin className="mr-2" /> Yangon, Myanmar
                     </p>
                 </div>
 

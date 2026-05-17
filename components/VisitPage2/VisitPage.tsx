@@ -10,9 +10,9 @@ export default function VisitPage2() {
     return (
         <div className="max-w-6xl mx-auto pt-16 px-6">
             {/* Back button */}
-            <button className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
+            <a href="/home" className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
                 <span className="text-lg">‹</span> Projects
-            </button>
+            </a>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
                 <div>
@@ -26,7 +26,7 @@ export default function VisitPage2() {
                 </div>
 
                 <div className="flex items-center gap-6 text-sm">
-                    <a href="https://github.com/pk-1111/Ev-POS.git" className="text-gray-400 hover:text-white flex items-center gap-2">GitHub ↗</a>
+                    <a href="https://github.com/pk-1111/Ev-POS.git" className="text-gray-100 hover:text-white flex items-center gap-2">GitHub ↗</a>
                     <a href="/admin_ev_dashboard" className="text-slat-100 hover:text-white flex items-center gap-2">Ev Admin Dashboard ↗</a>
                 </div>
             </div>

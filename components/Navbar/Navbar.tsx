@@ -1,3 +1,4 @@
+import { IconArrowDown } from "@tabler/icons-react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -19,12 +20,12 @@ const Navbar = () => {
                 download="Kyaw_Kaung_San_CV.pdf"
                 className="relative inline-flex items-center justify-center p-[1.5px] overflow-hidden rounded-xl group transition-all duration-300 active:scale-95"
             >
-                {/* သင်ပြထားတဲ့ Conic Gradient Border Animation */}
-                <div className="absolute inset-0 bg-[conic-gradient(from_180deg,transparent_0%,#b0b2e6_50%,transparent_80%)] animate-[spin_3s_linear_infinite] opacity-80 group-hover:opacity-100"></div>
+
+                {/* <div className="absolute inset-0 bg-[conic-gradient(from_180deg,transparent_0%,#b0b2e6_50%,transparent_80%)] animate-[spin_3s_linear_infinite] opacity-80 group-hover:opacity-100"></div> */}
 
                 {/* Button Content */}
-                <div className="relative flex items-center gap-2 font-semibold hover:bg-slate-900 transition-colors px-4 py-2 rounded-[11px] text-white text-sm font-medium backdrop-blur-xl">
-                    <i className="fa-solid fa-file-arrow-down animate-bounce group-hover:animate-none"></i>
+                <div className="relative flex items-center gap-2 border-2 font-semibold hover:bg-slate-900 transition-colors px-4 py-2 rounded-[11px] text-white text-sm font-medium backdrop-blur-xl">
+                    <IconArrowDown className="fa-solid fa-file-arrow-down font-extrabold text-xl animate-bounce group-hover:animate-none" />
                     Get My Cv
                 </div>
             </Link>

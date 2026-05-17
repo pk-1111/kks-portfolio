@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -10,9 +11,9 @@ export default function VisitPage() {
     return (
         <div className="max-w-6xl mx-auto pt-16 px-6">
             {/* Back button */}
-            <button className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
+            <a href="/home" className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
                 <span className="text-lg">‹</span> Projects
-            </button>
+            </a>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
                 <div>
@@ -26,14 +27,14 @@ export default function VisitPage() {
                 </div>
 
                 <div className="flex items-center gap-6 text-sm">
-                    <a href="https://github.com/pk-1111/I-Max-POS.git" className="text-gray-400 hover:text-white flex items-center gap-2">GitHub ↗</a>
-                    <a href="/admin_dashboard" className="text-gray-400 hover:text-white flex items-center gap-2">Admin Dashboard↗</a>
+                    <a href="https://github.com/pk-1111/I-Max-POS.git" className="text-gray-100 hover:text-white flex items-center gap-2">GitHub ↗</a>
+                    <a href="/admin_dashboard" className="text-gray-100 hover:text-white flex items-center gap-2">Admin Dashboard↗</a>
                 </div>
             </div>
 
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {/* Main Video Display */}
-                <div className="lg:col-span-3 rounded-[1.5rem] overflow-hidden border border-white/10 bg-black/40 backdrop-blur-sm shadow-2xl relative group">
+                <div className="lg:col-span-3 rounded-xl aspect-video overflow-hidden border border-white/10 bg-black/40 backdrop-blur-sm shadow-2xl relative group">
                     {/* Video */}
                     <video
                         src="/bg_video/I-Max-User.mp4"
@@ -41,7 +42,7 @@ export default function VisitPage() {
                         muted
                         playsInline
                         autoPlay
-                        preload="metadata"
+                        preload="none"
                         className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
                     />
 
@@ -57,7 +58,7 @@ export default function VisitPage() {
                             🔗 Tech Stack
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                            {['Laravel', 'PHP', 'Tailwind CSS', 'MySQL'].map(tag => (
+                            {['Laravel', 'PHP', 'Blade Engine', 'Tailwind CSS', 'MySQL'].map(tag => (
                                 <span key={tag} className="px-3 py-1 bg-white/10 rounded-lg text-[11px] text-white border border-white/5">
                                     {tag}
                                 </span>
@@ -91,44 +92,44 @@ export default function VisitPage() {
                 <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
 
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-1.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-1.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-2.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-2.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-3.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-3.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-4.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-4.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-5.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-5.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-6.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-6.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-7.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-7.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-8.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-8.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-9.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-9.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-10.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-10.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-11.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-11.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="min-w-[280px] md:min-w-[320px] aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#1a1a1a] snap-start hover:border-blue-500/30 transition-all" >
-                        <img src="/idevice-shop/idevice-12.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                        <Image width={500} height={500} src="/idevice-shop/idevice-12.png" alt="Screenshot" className="w-full h-50 object-cover opacity-60 hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
 

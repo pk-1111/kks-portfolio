@@ -1,3 +1,4 @@
+import { IconArrowAutofitContent, IconArrowAutofitRight, IconArrowAutofitUp, IconArrowAutofitUpFilled, IconCapProjecting, IconFolder } from "@tabler/icons-react";
 
 
 
@@ -38,8 +39,8 @@ export default function ProjectSection() {
             {/* Header Section */}
             <div className="flex flex-col p-3 space-y-6 text-center items-center mb-12">
                 <div className="flex items-center justify-center px-6 py-3 font-mono rounded-full bg-blue-600/20 border border-blue-500/50">
-                    <span className="text-xl">
-                        <i className="fa-solid fa-briefcase mr-2"></i> Projects
+                    <span className="flex items-center text-xl">
+                        <IconFolder className="mr-2" />  Projects
                     </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-300 font-bold leading-relaxed">
@@ -66,12 +67,12 @@ export default function ProjectSection() {
                                 className="flex items-center space-x-2 text-xl bg-white/5 px-5 py-2 rounded-full border border-white/10 hover:bg-white/20 transition-all"
                             >
                                 <span>Visit Project</span>
-                                <i className="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                <IconArrowAutofitRight />
                             </a>
                         </div>
 
                         {/* Main Media Card - Video အကြီးကြီးပြမည့်အပိုင်း */}
-                        <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-[#111] aspect-video w-full shadow-2xl">
+                        <div className="relative overflow-hidden rounded-xl border border-white/10 bg-[#111] aspect-video w-full shadow-2xl">
                             {/* Background Image */}
                             <img
                                 src={project.image}

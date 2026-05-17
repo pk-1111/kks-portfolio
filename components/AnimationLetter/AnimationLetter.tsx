@@ -17,8 +17,8 @@ export default function MarqueeItem({
             <div className={`${animationClass} flex whitespace-nowrap hover-pause`}>
                 {
                     [1, 2, 3, 4].map((i) => (
-                        <div key={i} className={`flex items-center text-2xl font-mono uppercase ${color} mx-4`}>
-                            <span className="mx-4">{text}</span>
+                        <div key={i} className={`flex items-center text-4xl uppercase ${color} mx-4`}>
+                            <span className="mx-4 font-bold">{text}</span>
                             <span className="mx-4">{icon}</span>
                         </div>
                     ))

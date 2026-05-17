@@ -10,9 +10,9 @@ export default function Admin_EVPage() {
     return (
         <div className="max-w-6xl mx-auto pt-16 px-6">
             {/* Back button */}
-            <button className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
+            <a href="/home" className="text-slate-200 hover:text-white flex items-center gap-2 mb-6 transition">
                 <span className="text-lg">‹</span> Projects
-            </button>
+            </a>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
                 <div>
@@ -55,15 +55,10 @@ export default function Admin_EVPage() {
                         <h3 className="text-white text-xs font-bold uppercase tracking-widest mb-4">🔗 Other Projects</h3>
                         <ul className="space-y-3 text-sm text-white">
 
-                            <Link href="/visit2">
+                            <Link href="/ev_pos">
                                 <li className="hover:text-emerald-400 cursor-pointer transition">Ev-POS Project</li>
                             </Link>
-                            <Link href="/visit1">
-                                <li className="hover:text-emerald-400 cursor-pointer transition">Hunter-Pizza Project</li>
-                            </Link>
-                            <Link href="/visit">
-                                <li className="hover:text-emerald-400 cursor-pointer transition">I-Max Project</li>
-                            </Link>
+
                         </ul>
                     </div>
                 </div>

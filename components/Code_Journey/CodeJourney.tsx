@@ -1,3 +1,10 @@
+import {
+    IconBrandGithub,
+    IconBrandLinkedin,
+    IconMail,
+    IconButterfly, // Bluesky အတွက် Tabler Icon ဖြစ်ပါတယ်
+    IconBriefcase
+} from '@tabler/icons-react';
 import Link from 'next/link';
 
 export default function StatsSection() {
@@ -20,15 +27,14 @@ export default function StatsSection() {
     ];
 
     const socials = [
-        { icon: "fa-brands fa-github", link: "https://github.com/pk-1111" },
-        { icon: "fa-brands fa-linkedin-in", link: "https://www.linkedin.com/in/kyaw-kaung-san/" },
-        { icon: "fa-envelope", link: "mailto:kyawkaungsan1111@gmail.com" },
-        { icon: "fa-brands fa-bluesky", link: "#" }, // Butterfly icon အတွက် font-awesome version လိုအပ်ပါမယ်
+        { icon: IconBrandGithub, link: "https://github.com/pk-1111" },
+        { icon: IconBrandLinkedin, link: "https://www.linkedin.com/in/kyaw-kaung-san/" },
+        { icon: IconMail, link: "mailto:kyawkaungsan1111@gmail.com" },
+        { icon: IconButterfly, link: "#" },
     ];
 
     return (
         <div className="relative z-30 w-full flex flex-col items-center px-6 py-24 text-white">
-
 
             {/* Title */}
             <h2 className="text-4xl md:text-6xl font-bold text-center mb-20 leading-tight">
@@ -62,21 +68,24 @@ export default function StatsSection() {
                 </p>
             </div>
 
-
-
             <div className="flex flex-col items-center justify-center space-y-10 py-16">
 
                 {/* Social Icons Row */}
-                <div className="flex items-center space-x-6">
-                    {socials.map((social, index) => (
-                        <a
-                            key={index}
-                            href={social.link}
-                            className="w-14 h-14 flex items-center justify-center rounded-full border border-emerald-500/40 text-white text-2xl hover:bg-emerald-500/10 hover:shadow-[0_0_15px_rgba(52,211,153,0.3)] transition-all duration-300"
-                        >
-                            <i className={`fa - brands ${social.icon}`}></i>
-                        </a>
-                    ))}
+                <div className="flex items-center space-x-6 ">
+                    {socials.map((social, index) => {
+                        // Icon component ကို variable ထဲပြောင်းသိမ်းပြီးမှ render လုပ်သည်
+                        const IconComponent = social.icon;
+
+                        return (
+                            <a
+                                key={index}
+                                href={social.link}
+                                className="w-14 h-14 flex items-center justify-center rounded-full border border-emerald-500/40 text-white hover:bg-emerald-500/10 hover:shadow-[0_0_15px_rgba(52,211,153,0.3)]  hover:text-white  hover:scale-130 transition-transform duration-300 "
+                            >
+                                <IconComponent size={24} stroke={1.5} />
+                            </a>
+                        );
+                    })}
                 </div>
 
                 {/* Let's Talk Success Button */}
@@ -85,17 +94,17 @@ export default function StatsSection() {
                         {/* Glow Effect on Hover */}
                         <div className="absolute inset-0 bg-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
-                        <i className="fa-solid fa-briefcase text-emerald-400 text-xl group-hover:rotate-12 transition-transform"></i>
-                        <span className="text-white text-2xl font-semibold tracking-wide">
-                            Let's Talk Success
+                        {/* Button Internal Icon နေရာတွင် flex items-center ဖြစ်အောင် ပြင်ဆင်ထားသည် */}
+                        <span className="flex items-center gap-2">
+                            <IconBriefcase size={24} className="text-emerald-400 group-hover:rotate-12 transition-transform" stroke={1.5} />
+                            <span className="text-white text-2xl font-semibold tracking-wide">
+                                Let's Talk Success
+                            </span>
                         </span>
                     </button>
                 </Link>
 
             </div>
-
-
-
-        </div >
+        </div>
     );
 }

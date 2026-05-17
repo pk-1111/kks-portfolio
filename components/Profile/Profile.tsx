@@ -6,24 +6,24 @@ const Profile = () => {
     const projects = [
         {
             title: "iMax POS System",
-            tech: "Laravel + React + Inertia.js",
+            tech: "Laravel + PHP + Tailwindcss",
             desc: "A modern Single Page Application (SPA) focusing on high-performance data handling and seamless UI transitions using Inertia.js.",
-            image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=500", // Project ပုံထည့်ရန်
-            link: "/visit"
+            image: "/idevice-shop/idevice-cover.png", // Project ပုံထည့်ရန်
+            link: "/i_max_pos"
         },
         {
             title: "EV POS Project",
-            tech: "React.js",
+            tech: "Laravel + React + Inertia.js",
             desc: "Developed a lightweight, fast-loading frontend POS interface with React, emphasizing component reusability and efficient state management.",
-            image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=500", // Project ပုံထည့်ရန်
-            link: "/visit2"
+            image: "/ev-pos/ev-1-cover.png", // Project ပုံထည့်ရန်
+            link: "/ev_pos"
         },
         {
             title: "Pizza Ordering Project",
             tech: "Laravel + PHP + Bootstrap",
             desc: "A full-stack web application featuring order management, secure authentication, and a responsive design for food services.",
-            image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=500", // Project ပုံထည့်ရန်
-            link: "/visit1"
+            image: "/bg_video/pizza-src-cover.png", // Project ပုံထည့်ရန်
+            link: "/pizza_pos"
         }
     ];
 
